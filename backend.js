@@ -57,3 +57,7 @@ function getRandomCard() {
     return randomNumber;
   }
 }
+
+function resetGame() {
+  location.reload();
+}
