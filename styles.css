@@ -29,3 +29,8 @@ button {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+button:hover {
+  background-color: red;
+  color: white;
+}
