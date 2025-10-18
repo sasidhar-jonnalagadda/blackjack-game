@@ -29,14 +29,15 @@ function renderGame() {
 
 function startGame() {
   isAlive = true;
-  let firstNumber = getRandomCard();
-  let secondNumber = getRandomCard();
-  cards = [firstNumber, secondNumber];
-  sum = firstNumber + secondNumber;
+  hasBlackJack = false;
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
   renderGame();
 }
 
-function newGame() {
+function newCard() {
   if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard();
     cards.push(card);
